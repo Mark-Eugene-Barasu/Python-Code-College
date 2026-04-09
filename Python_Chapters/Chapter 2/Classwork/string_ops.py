@@ -48,5 +48,5 @@ print("13. The index of: ",message.find("World"))
 
 #split(): Splits a string into a list(Array) based on a delimiter.
 message = "apple,banana,cherry"
-print("14. splitted string:", message.split("-"))  
+print("14. splitted string:", message.split(","))  
 
