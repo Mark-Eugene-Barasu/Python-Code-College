@@ -45,7 +45,7 @@ print("10. LowerCase:",message.lower())
 message = "   Hello, World!   "
 print("11. Removed spaces:", message.strip())
 print("11. Removed spaces:", message.rstrip()) 
-print 
+print("11. Removed spaces:", message.lstrip())
 
 #replace(): Replaces one substring with another.
 message = "Hello, World how are you!"
