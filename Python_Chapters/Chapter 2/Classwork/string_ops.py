@@ -25,6 +25,14 @@ print("7. Negative Indexing:","Hello"[-1])
 #String Comparison: Comparing strings using comparison operators.
 print("8. String Comparison:", "10" != 10)  
 ###########################################################################
+#capitalize(): Converts the first character to uppercase and the rest to lowercase.
+message = "hello, world"    
+print("8.1. Capitalize:", message.capitalize())
+
+#title(): Converts the first character of each word to uppercase.
+message = "hello, world"    
+print("8.2. Title Case:", message.title())
+
 #upper(): Converts all characters to uppercase.
 message = "hello, world"
 print("9. UpperCase:", message.upper())  
@@ -36,7 +44,8 @@ print("10. LowerCase:",message.lower())
 #strip(): Removes leading and trailing whitespace.
 message = "   Hello, World!   "
 print("11. Removed spaces:", message.strip())
-print("11. Removed spaces:", message.rstrip())  
+print("11. Removed spaces:", message.rstrip()) 
+print 
 
 #replace(): Replaces one substring with another.
 message = "Hello, World how are you!"
