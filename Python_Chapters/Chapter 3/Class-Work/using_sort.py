@@ -18,9 +18,9 @@ original_cars = ['bmw', 'audi', 'toyota', 'subaru']
 print("4. Original list:", original_cars)
 print("5. Sorted list temporarily:", sorted(original_cars), "\n")
 
-# Reversing the orginal list
+# Reversing the original list
 original_cars.reverse()
-print("6.Reversed orginal list:", original_cars, "\n")
+print("6.Reversed original list:", original_cars, "\n")
 
 #Finding the length of the list
 print("7. Length of the list:", len(cars), "\n")
