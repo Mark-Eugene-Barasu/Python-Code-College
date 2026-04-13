@@ -19,9 +19,9 @@ print(message)  # Output: Albert Einstein once said, "A person who never made a 
 
 # 2.7 Stripping Names
 name = " \n\t  Mark   "
-print(name.strip())  # Output: Mark
-print(name.lstrip())  # Output: Mark
-print(name.rstrip())  # Output: Mark
+print(name.strip())  # removes leading and trailing whitespace characters, including newlines and tabs
+print(name.lstrip())  # removes leading whitespace characters, including newlines and tabs
+print(name.rstrip())  # removes trailing whitespace characters, including newlines and tabs
 
 # 2.8 File Extensions
 filename = "example_document.txt"
