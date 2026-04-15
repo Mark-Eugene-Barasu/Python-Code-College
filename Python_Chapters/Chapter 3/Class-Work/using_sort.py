@@ -26,7 +26,7 @@ print("6.Reversed original list:", original_cars, "\n")
 print("7. Length of the list:", len(cars), "\n")
 
 print("-----------------Trying to access an index that doesn't exist----------------------")
-#Accesing a value that doesn't exist
+#Accessing a value that doesn't exist
 motorcycles = ['honda', 'yamaha', 'suzuki']
 
 #Trying to access an index that doesn't exist
