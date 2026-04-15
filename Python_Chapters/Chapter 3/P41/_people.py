@@ -10,8 +10,7 @@ print(guests, "\n")
 # 3.6 More Guests:
 guests.insert(0, "Lodi")
 guests.insert(3, "Love")
-# the insert doesn't appear at the end of the list, it's 2nd to last. Why?
-guests.insert(-1, "Joyce")
+guests.insert(1, "Joyce")
 print(guests, "\n")
 
 # 3.7 Shrinking Guest List:
@@ -19,8 +18,7 @@ _1st_pop = guests.pop()
 print(f"\nI'm so sorry {_1st_pop}, my daughter said you can't come")
 
 _2nd_pop = guests.pop()
-print(
-    f"\nAy, {_2nd_pop} we changed our mind, we'll invite you to our cookout instead.")
+print(f"\nAy, {_2nd_pop} we changed our mind, we'll invite you to our cookout instead.")
 
 _3rd_pop = guests.pop()
 print(f"\nButhi {_3rd_pop}, the other time my friend said you were drinking too much, so you are not invited again. Sorry!!")

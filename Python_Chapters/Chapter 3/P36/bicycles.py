@@ -11,8 +11,7 @@ print(names[5])
 # 3.2 Greeting
 print(f"My junior brother is called {names[0]} and I love him so much. {"\n"}")
 print(f"{names[1]} created his own nail saloon shop in East London {"\n"}")
-print(
-    f"I just hope {names[2]} is doing okay, since it's been a long time. {"\n"}")
+print(f"I just hope {names[2]} is doing okay, since it's been a long time. {"\n"}")
 print(f"Did you know that {names[3]} is a very good panel-beater? {"\n"}")
 print(f"{names[4]} from China won the 2022 Hackathon in the U.S.A. {"\n"}")
 print(f"Of course, {names[-1]} went back to university. {"\n"}")

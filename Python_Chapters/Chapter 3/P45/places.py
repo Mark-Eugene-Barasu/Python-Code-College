@@ -32,7 +32,9 @@ print("\n", languages)
 languages.reverse()  # this reverse the alphabetically sorted list of languages
 print("\n", languages)
 
-""" the sorted() function sorts the languages out without
+""" 
+the sorted() function sorts the languages out without
 changing the original order of the list
 """
+
 print(sorted(languages))
