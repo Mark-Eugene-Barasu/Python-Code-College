@@ -3,3 +3,9 @@
 is a multi-line comment
 This is useful for longer explanations or documentation.
 """
+
+'''
+anything in here
+'''
+
+# single line comment

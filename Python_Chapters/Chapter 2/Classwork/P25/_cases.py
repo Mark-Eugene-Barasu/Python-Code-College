@@ -9,7 +9,7 @@ print(Eric.title())  # Output: Hello Eric, Would You Like To Learn Python Today?
 print(Eric.strip())  # Output: Hello Eric, would you like to learn Python today
 
 # 2.5 famous quote
-famous_quote = 'Albert Einstein once said, "A person who never made a mistake never tried anything new."'
+famous_quote = "Albert Einstein once said, \"A person who never made a mistake never tried anything new.\""
 print(famous_quote)  # Output: Albert Einstein once said, "A person who never made a mistake never tried anything new."
 
 # 2.6 Famous Quote 2
