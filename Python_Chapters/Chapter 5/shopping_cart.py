@@ -1,7 +1,7 @@
 # Available items in store
 available_items = ['apple', 'banana', 'carrot', 'pear', 'berry']
 
-# Customer's shopping cart 
+# Customer's shopping cart
 shopping_cart = []
 
 # Asking the user to input items they want to add
