@@ -18,7 +18,7 @@ print(student_info)
 
 # looping through a dictionary
 for a, b in student_info.items():
-    print(f"The key is: \"{a}\" this is the value \"{b}\"")
+    print(f"The key is: \"{a}\" and the value is \"{b}\"")
 
 
 for value in student_info.values():
