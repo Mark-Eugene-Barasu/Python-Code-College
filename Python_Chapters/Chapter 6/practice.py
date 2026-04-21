@@ -28,7 +28,8 @@ print(student_info["name"])
 print(student_info["fruits"][1])
 print(list(student_info.values())[2])
 print(student_info.get("house"))  # doesn't exist therefore : None
-print(student_info.get("race", "coloured"))
+# doesn't exist, returns default
+print(student_info.get("major", "Undeclared"))
 
 # Nested dictionaries
 x = {
