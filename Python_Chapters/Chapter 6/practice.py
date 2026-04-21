@@ -27,3 +27,11 @@ for value in student_info.values():
 print(student_info["name"])
 print(student_info["fruits"][1])
 print(list(student_info.values())[2])
+print(student_info.get("house"))  # doesn't exist therefore : None
+print(student_info.get("race", "coloured"))
+
+# Nested dictionaries
+x = {
+    "Sajjad": {"math": 100, "English": 95},
+    "David": {"math": 95, "English": 100}
+}
