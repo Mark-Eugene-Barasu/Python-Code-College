@@ -31,8 +31,12 @@ print(student_info.get("house"))  # doesn't exist therefore : None
 # doesn't exist, returns default
 print(student_info.get("major", "Undeclared"))
 
-# Nested dictionaries
-x = {
+student_scores = {
     "Sajjad": {"math": 100, "English": 95},
     "David": {"math": 95, "English": 100}
 }
+
+# Accessing nested dictionary values
+print(f"All the keys => {student_scores.keys()}  \nAll the values => {student_scores.values()}")
+print(student_scores["Sajjad"]["math"])  # Output: 100
+print(student_scores["David"]["English"])  # Output: 100}
