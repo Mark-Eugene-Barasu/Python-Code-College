@@ -1,9 +1,9 @@
 #A List of Dictionaries:
 # List of dictionaries, each representing a car's details
 cars = [
-    {'make': 'Toyota', 'model': 'Corolla', 'color': 'blue'},
-    {'make': 'Honda', 'model': 'Civic', 'color': 'red'},
-    {'make': 'Ford', 'model': 'Mustang', 'color': 'black'}
+    {'make': 'Toyota', 'model': 'Corolla', 'color': 'blue'}, # item one (index 0)
+    {'make': 'Honda', 'model': 'Civic', 'color': 'red'}, # item two (index 1)
+    {'make': 'Ford', 'model': 'Mustang', 'color': 'black'} # item three (index 2)
 ]
 
 # Loop through the list of dictionaries and print each car's details
