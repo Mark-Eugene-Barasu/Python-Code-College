@@ -51,4 +51,4 @@ while True:
 # 7-7. Infinity (press CTRL-C to stop)
 # print("\n--- 7-7. Infinity ---")
 # while True:
-#     print("This loop never ends!")
+#   print("This loop never ends!")
