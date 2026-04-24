@@ -34,4 +34,7 @@ print(student_info)
 age = student_info.get('age', 'Age not available')
 print(f"Student's age: {age}")
 
-# print(student_info.get("gender", "female"))
+# the .get method help to put in a value just in case that key has no value
+# also the .get method doesn't throw error in terminal, it will just return None
+# in case the value is is not there for that specific key
+print(student_info.get("gender", "female"))

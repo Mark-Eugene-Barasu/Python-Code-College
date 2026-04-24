@@ -3,14 +3,15 @@ alien_color = 'green'
 if alien_color == 'green':
     print("The player just earned 5 points.")
 
-print('\\n' + '='*40 + '\\n')
+print('='*40)
 
 # 5-3 Version that fails (no output)
 alien_color = 'yellow'
 if alien_color == 'green':
     print("The player just earned 5 points.")
+# ^^ nothing with happen in output because condition is False
 
-print('='*40 + '\\n')
+print('='*40)
 
 # 5-4 Alien Colors #2 - Runs if block (green)
 alien_color = 'green'
@@ -19,7 +20,7 @@ if alien_color == 'green':
 else:
     print("The player just earned 10 points.")
 
-print('='*40 + '\\n')
+print('='*40)
 
 # 5-4 Runs else block (yellow)
 alien_color = 'yellow'
@@ -28,7 +29,7 @@ if alien_color == 'green':
 else:
     print("The player just earned 10 points.")
 
-print('='*40 + '\\n')
+print('='*40)
 
 # 5-5 Alien Colors #3 - Green
 alien_color = 'green'
@@ -39,7 +40,7 @@ elif alien_color == 'yellow':
 else:
     print("The player earned 15 points.")
 
-print('='*40 + '\\n')
+print('='*40)
 
 # 5-5 Yellow
 alien_color = 'yellow'
@@ -50,7 +51,7 @@ elif alien_color == 'yellow':
 else:
     print("The player earned 15 points.")
 
-print('='*40 + '\\n')
+print('='*40)
 
 # 5-5 Red
 alien_color = 'red'
@@ -61,7 +62,7 @@ elif alien_color == 'yellow':
 else:
     print("The player earned 15 points.")
 
-print('='*40 + '\\n')
+print('='*40)
 
 # 5-6 Stages of Life
 age = 1  # Change this value to test different stages
@@ -78,7 +79,7 @@ elif age < 65:
 else:
     print("The person is an elder.")
 
-print('='*40 + '\\n')
+print('='*40)
 
 # 5-7 Favorite Fruit
 favorite_fruits = ['bananas', 'apples', 'oranges']

@@ -26,6 +26,7 @@ new_users = ['bob', 'DAVE', 'Alice', 'eve', 'frank']
 
 # Lowercase copy for comparison
 current_users_lower = [user.lower() for user in current_users]
+# print([user.lower().capitalize() for user in new_users])
 
 for new_user in new_users:
     if new_user.lower() in current_users_lower:
