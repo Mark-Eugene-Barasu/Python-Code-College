@@ -27,7 +27,7 @@ print()
 
 # Example 3: Function to prevent modification of the original list
 def add_designs_to_completed_without_modifying_original(unprinted_designs, completed_designs):
-    unprinted_designs_copy = unprinted_designs[:]      # Create a copy of the original list
+    unprinted_designs_copy = unprinted_designs.copy()      # Create a copy of the original list
     
     while unprinted_designs_copy:                      # Continues until the copied list is empty
         current_design = unprinted_designs_copy.pop()  # Removes the last item from the copy
