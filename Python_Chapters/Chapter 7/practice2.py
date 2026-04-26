@@ -1,15 +1,21 @@
-# Using a while loop with list and dictionary
-# Removing all occurrences of 'BMW' and 'Benz' from the list of cars
 
+# Filling a Dictionary with User Input
 
-cars = ['Benz', 'BMW', 'Benz', 'Polo', 'BMW', 'Honda', 'BMW']
-print("\nOriginal list of cars:", cars)
+responses = {}
+polling_active = True
 
-while 'BMW' in cars:
-    cars.remove('BMW')  # Remove first occurrence of 'BMW'
-    # del cars["BMW"]   
+while polling_active:
+    name = input("\nWhat is your name? ")
+    response = input("Which mountain would you like to climb someday? ")
 
-while 'Benz' in cars:
-    cars.remove('Benz')  # Remove first occurrence of 'Benz'
+    # Store the response in the dictionary
+    responses[name] = response
 
-print("Updated list of cars:", cars)
+    repeat = input("Would you like to let another person respond? (yes/no) ")
+    if repeat.lower() == 'no':
+        polling_active = False  # End the poll if the user types 'no'
+
+# Show the poll results
+print("\n--- Poll Results ---") 
+for name, response in responses.items():
+    print(f"{name} would like to climb {response}.")
