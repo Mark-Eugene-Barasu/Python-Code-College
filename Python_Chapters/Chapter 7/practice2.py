@@ -1,11 +1,13 @@
 
+
 active = True
 
 while active:
-    message = input("Tell me something, and I will repeat it back to you: ")
-    print(f"You said: \"{message}\"")
-
-    repeat = input("Would you like to say something else? (yes/no) ")
-    if repeat.lower().strip() == 'no':
-        # active = False  # End the loop if the user types 'no'
-        break
+    user_input = input("Do you want to continue? (yes/no) ")
+    if user_input.lower().strip() == 'no':
+        # active = False
+        break  # Exit the loop immediately
+    elif user_input.lower().strip() == 'yes':
+        print("Continuing the loop...")
+    else:
+        print("Invalid input. Please enter 'yes' or 'no'.")
