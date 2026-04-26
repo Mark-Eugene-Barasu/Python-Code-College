@@ -1,13 +1,16 @@
 
+used_colors = ['blue', 'black', 'red', 'green', 'orange']
+confirmed_colors = []
 
-active = True
+while used_colors:
+    current_color = used_colors.pop()  # Remove last color from the list
+    print(f"Verifying color: {current_color.title()}")
+    confirmed_colors.append(current_color)  # Add to the confirmed colors list
 
-while active:
-    user_input = input("Do you want to continue? (yes/no) ")
-    if user_input.lower().strip() == 'no':
-        # active = False
-        break  # Exit the loop immediately
-    elif user_input.lower().strip() == 'yes':
-        print("Continuing the loop...")
-    else:
-        print("Invalid input. Please enter 'yes' or 'no'.")
+print("\nThe following colors have been confirmed:")
+for confirmed_color in confirmed_colors:
+    print(f" - {confirmed_color.title()}")
+
+
+print(used_colors)
+print(confirmed_colors)
