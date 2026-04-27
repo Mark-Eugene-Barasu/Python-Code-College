@@ -8,7 +8,7 @@ def greet(name, age):
 greet('Alice', 30)  
 greet('Bob', 25)    
 
-################################################################################################
+print("################################################################")
 #The code defines a function create_account(username, password, email) that accepts three parameters: 
 # username, password, and email. The function prints a message indicating the account has been created 
 # and displays the associated username, password, and email.
@@ -23,7 +23,7 @@ create_account('john_doe', 'mypassword', 'john@example.com')
 # Incorrect order: 
 create_account('mypassword', 'john_doe', 'john@example.com')
 
-################################################################################################
+print("################################################################")
 #The function register_product(product_name, product_type, price) is defined to accept three parameters: 
 # product_name, product_type, and price. It prints information about the product, including its name, type, and price.
 def register_product(product_name, product_type, price):
@@ -40,7 +40,7 @@ register_product(product_name='Laptop', product_type='Electronics', price=999.99
 # Changing the order with keyword arguments
 register_product(price=999.99, product_type='Electronics', product_name='Laptop')
 
-#############################################################################################
+print("################################################################")
 #This code defines a function called sandwich that takes two parameters: bread_type and filling. Both parameters have default values
 def sandwich(bread_type='whole wheat', filling='ham'):
     print(f"\nMaking a {bread_type} sandwich with {filling}.")
@@ -54,7 +54,7 @@ sandwich(bread_type='sourdough', filling='turkey')
 # Using keyword arguments and changing the order
 sandwich(filling='cheese', bread_type='rye')
 
-####################################################################################
+print("#################################################################")
 #This code defines a function called register_user that takes three parameters, username, age, email
 def register_user(username, age, email):
     print(f"\nUser: {username}")
