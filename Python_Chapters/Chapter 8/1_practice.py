@@ -53,6 +53,17 @@ sandwich(filling='cheese', bread_type='rye')
 ##################################################################
 
 # Avoiding arguments errors
+# This code defines a function called register_user that takes three parameters, username, age, email
+
+
+def register_user(username, age, email):
+    print(f"\nUser: {username}")
+    print(f"Age: {age}")
+    print(f"Email: {email}")
+
+
+# Correct function call
+register_user('john_doe', 25, 'john@example.com')
 
 # Missing arguments (will raise an error)
 # register_user('jane_doe')  # Uncommenting this line will raise an error
