@@ -8,10 +8,12 @@ usernames = ['alice', 'bob', 'charlie']
 greet_users(usernames)                   # Calls greet_users() to print greetings for each user
 print()
 
+##############################################################################################
+
 # Example 2: Function to modify a list (moving designs from unprinted to completed)
 def add_designs_to_completed(unprinted_designs, completed_designs):
     
-    while unprinted_designs:                    # Continues until the unprinted designs list is empty
+    while unprinted_designs:  # Continues until the unprinted designs list is empty
         current_design = unprinted_designs.pop()# Removes the last item from unprinted_designs
         completed_designs.append(current_design)# Adds the item to completed_designs
 
@@ -24,6 +26,8 @@ print("Completed designs:", completed_designs)
 print("Unprinted designs (original list, modified):", unprinted_designs) 
 print()
 
+
+########################################################################################################
 
 # Example 3: Function to prevent modification of the original list
 def add_designs_to_completed_without_modifying_original(unprinted_designs, completed_designs):
