@@ -3,8 +3,7 @@
 from pathlib import Path
 
 # Define the path to the file 'alice.txt'
-path = Path('C:/Users/lesed/OneDrive/Documents/Code College/WEB BOOTCAMP/2. Python/MyWork/Source_Code/Chapters/Chapter 10/Exceptions/alice.txt')
-
+path = Path(r'C:\Users\mark0\OneDrive\Desktop\Code College\Python\Python_Chapters\Chapter 10\Exceptions\alice.txt')
 # Attempt to read the contents of the file
 try:
     contents = path.read_text(encoding='utf-8')# Try to read the content of 'alice.txt'

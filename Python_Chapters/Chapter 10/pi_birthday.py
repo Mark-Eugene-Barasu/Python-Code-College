@@ -1,6 +1,6 @@
 from pathlib import Path
 
-path = Path('C:/Users/lesed/OneDrive/Documents/Code College/WEB BOOTCAMP/2. Python/MyWork/Source_Code/Chapters/Chapter 10/pi_million_digits.txt')
+path = Path(r'C:\Users\mark0\OneDrive\Desktop\Code College\Python\Python_Chapters\Chapter 10\pi_million_digits.txt')
 contents = path.read_text()
 lines = contents.splitlines()
 

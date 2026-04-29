@@ -2,7 +2,7 @@
 from pathlib import Path
 
 # Define the path to the file
-path = Path(r'C:\Users\lesed\OneDrive\Documents\Code College\WEB BOOTCAMP\2. Python\MyWork\Source_Code\Chapters\Chapter 10\pi_digits.txt')
+path = Path(r'C:\Users\mark0\OneDrive\Desktop\Code College\Python\Python_Chapters\Chapter 10\pi_digits.txt')
 
 # Read the entire contents of the file
 contents = path.read_text()
