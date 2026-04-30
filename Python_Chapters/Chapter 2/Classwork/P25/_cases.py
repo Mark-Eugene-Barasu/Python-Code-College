@@ -24,7 +24,7 @@ print(name.lstrip())  # removes leading whitespace characters, including newline
 print(name.rstrip())  # removes trailing whitespace characters, including newlines and tabs
 
 # 2.8 File Extensions
-filename = "example_document.txt"
+filename = "python_notes.txt"
 website = "https://www.example.com"
-print(filename.removesuffix(".txt"))  # Output: example_document
+print(filename.removesuffix(".txt"))  # Output: python_notes
 print(website.removeprefix("https://www."))  # Output: example.com
