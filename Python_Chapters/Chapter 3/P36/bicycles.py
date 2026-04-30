@@ -25,3 +25,7 @@ print(f"According to society, it is an achievement to own a {transports[1]} \n")
 print(f"So mommy decided to sell my {transports[2]} without my consent \n")
 print(f"{transports[3]} are a very scary mode of transport \n")
 print(f"Did you know {transports[-1]} can fly in GTA? \n")
+
+
+
+
