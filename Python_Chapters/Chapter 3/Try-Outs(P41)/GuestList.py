@@ -1,5 +1,5 @@
 # names of 7 people
-people = ["Mark", "Desmond", "Alfred", "Esther", "Eugene", "Marema", "Sena"]
+people = ["Mark", "Desmond", "Alfred", "Esther", "Eugene", "Justin", "Sena"]
 
 hold_1 = people.pop()
 hold_2 = people.pop()

@@ -30,5 +30,5 @@ print("-----------------Trying to access an index that doesn't exist------------
 motorcycles = ['honda', 'yamaha', 'suzuki']
 
 #Trying to access an index that doesn't exist
-print(motorcycles[3])
+# print(motorcycles[3])
 print(motorcycles)
