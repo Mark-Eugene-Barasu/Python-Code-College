@@ -3,6 +3,8 @@
 
 import this
 
+print(this)
+
 """
 running this code will print the Zen of Python, which is a collection of guiding principles for writing computer programs in the Python language. It was written by Tim Peters and serves as a set of aphorisms that capture the philosophy of Python programming. The Zen of Python emphasizes simplicity, readability, and the importance of writing code that is easy to understand and maintain. It includes principles such as 
 
