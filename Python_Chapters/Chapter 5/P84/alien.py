@@ -13,6 +13,7 @@ if alien_color == 'green':
 
 print('='*40)
 
+
 # 5-4 Alien Colors #2 - Runs if block (green)
 alien_color = 'green'
 if alien_color == 'green':
@@ -30,6 +31,7 @@ else:
     print("The player just earned 10 points.")
 
 print('='*40)
+
 
 # 5-5 Alien Colors #3 - Green
 alien_color = 'green'
@@ -64,6 +66,7 @@ else:
 
 print('='*40)
 
+
 # 5-6 Stages of Life
 age = 1  # Change this value to test different stages
 if age < 2:
@@ -80,6 +83,7 @@ else:
     print("The person is an elder.")
 
 print('='*40)
+
 
 # 5-7 Favorite Fruit
 favorite_fruits = ['bananas', 'apples', 'oranges']
