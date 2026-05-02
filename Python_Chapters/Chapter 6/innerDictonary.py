@@ -17,4 +17,3 @@ for username, user_info in users.items():
     # Accessing and printing values from the inner dictionary
     full_name = f"{user_info['first_name']} {user_info['last_name']} {user_info['location']}"
     print(full_name)
- 
