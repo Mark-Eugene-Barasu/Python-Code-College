@@ -12,6 +12,3 @@ sizes = (400, 100)
 print("\nModified sizes:")
 for size in sizes:
     print(size)
-
-
- 
