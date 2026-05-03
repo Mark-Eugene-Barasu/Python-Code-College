@@ -5,10 +5,12 @@
 def greet(name, age):
     print(f"Hello, {name}! You are {age} years old.")
 
-# greet('Sedii', 30)  # This will work correctly
-greet("Alice", 25)  # This will cause an error because the arguments are in the wrong order     
+greet('Sedii', 30)  # This will work correctly
+# greet(25, "Alice")  # This will cause an error because the arguments are in the wrong order     
 
 ################################################################
+
+
 
 # Keyword arguments (the order does not matter)
 
@@ -33,6 +35,8 @@ car_product(car_color='Red', car_name='Toyota', car_price=1000.00)
 
 
 ##################################################################
+
+
 
 # Default values for parameters (order does not matter)
 

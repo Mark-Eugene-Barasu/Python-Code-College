@@ -6,6 +6,7 @@ def make_pizza(*toppings):
 make_pizza('pepperoni')
 make_pizza('mushrooms', 'green peppers', 'extra cheese')
 
+
 #Mixing Positional and Arbitrary Arguments
 def make_pizza(size, *toppings):
     """Summarize the pizza we are about to make."""
@@ -16,6 +17,7 @@ def make_pizza(size, *toppings):
 make_pizza(16, 'pepperoni')
 make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 
+
 #Using Arbitrary Keyword Arguments
 def build_profile(first, last, **user_info):
     """Build a dictionary containing everything we know about a user."""
@@ -23,7 +25,7 @@ def build_profile(first, last, **user_info):
     user_info['last_name'] = last
     return user_info
 
-user_profile = build_profile('jane', 'smith', location='princeton', field='physics')
-print(user_profile)
+user_profile = build_profile('albert', 'einstein', location='princeton', field='physics')
+print("\n", user_profile)
 
 

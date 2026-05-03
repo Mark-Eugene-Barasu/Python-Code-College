@@ -1,5 +1,5 @@
-print("\n <----------------- 8.3 ------------------->\n")
 # 8-3. T-Shirt
+print("\n <----------------- 8.3 ------------------->\n")
 
 
 def make_shirt(size, message):
@@ -14,8 +14,8 @@ make_shirt(message="Keep Calm and Code On", size="Medium")
 # Notice that the position of arguments does not matter when using keyword arguments
 
 
-print("\n <----------------- 8.4 ------------------->\n")
 # 8-4. Large Shirts
+print("\n <----------------- 8.4 ------------------->\n")
 
 
 def make_shirt(size="Large", message="I love Python"):
@@ -28,8 +28,8 @@ make_shirt(size="Medium")
 make_shirt(size="Small", message="Python Rocks")  # any size, different message
 
 
-print("\n <----------------- 8.5 ------------------->\n")
 # 8-5. Cities
+print("\n <----------------- 8.5 ------------------->\n")
 
 
 def describe_city(city, country="Iceland"):
