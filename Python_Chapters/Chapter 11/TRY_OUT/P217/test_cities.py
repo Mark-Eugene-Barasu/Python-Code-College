@@ -9,6 +9,7 @@ def test_city_country():
     # Test 11-1: basic city, country format
     result = city_country('santiago', 'chile')
     assert result == 'Santiago, Chile'
+    # assert True == False
 
 
 def test_city_country_population():
