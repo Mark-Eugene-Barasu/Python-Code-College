@@ -28,14 +28,15 @@ def store_new_number(filename):
         return store_new_number(filename)  # Recurse on error
 
 
-filename_num = './favorite_number.json'
+script_dir = os.path.dirname(os.path.abspath(__file__))
+filename_num = os.path.join(script_dir, 'favorite_number.json')
 num = get_stored_number(filename_num)
 if num:
     print(f'I remember your favorite number is {num}!')
 else:
     store_new_number(filename_num)
 
-print('\\n=== 10-13/10-14 User Dict Verification ===')
+print('\n=== 10-13/10-14 User Dict Verification ===')
 
 
 def get_stored_user(filename):
@@ -52,8 +53,7 @@ def get_user_info(filename):
     user['hobby'] = input('Hobby: ')
     with open(filename, 'w') as f:
         json.dump(user, f)
-    print(
-        f'Stored info for {user["username"]}: color={user["favorite_color"]}, hobby={user["hobby"]}')
+    print(f'Stored info for {user["username"]}: color={user["favorite_color"]}, hobby={user["hobby"]}')
     return user
 
 
@@ -68,7 +68,7 @@ def verify_user_info(filename):
     print(f'Remember: color={data["favorite_color"]}, hobby={data["hobby"]}')
 
 
-filename_user = './user_info.json'
+filename_user = os.path.join(script_dir, 'user_info.json')
 verify_user_info(filename_user)
 
-print('Done - files in P206/')
+print('Done - check JSON files for stored data! In this directory: favorite_number.json and user_info.json')
