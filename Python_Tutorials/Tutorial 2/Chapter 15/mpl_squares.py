@@ -15,7 +15,7 @@ squares = [1, 4, 9, 16, 25]
 chapter_dir = os.path.dirname(os.path.abspath(__file__))
 out_path = os.path.join(chapter_dir, "mpl_squares.png")
 
-plt.style.use("ggplot")
+plt.style.use("seaborn")
 
 try:
     fig, ax = plt.subplots()
