@@ -43,3 +43,5 @@ my_used_car.read_odometer()                 # Displays the current mileage of th
 my_used_car.increment_odometer(200)         # Add 200 miles to the odometer
 my_used_car.read_odometer()                 # Displays the updated mileage after incrementing
 
+my_used_car.increment_odometer(1)        
+my_used_car.read_odometer()        
