@@ -1,0 +1,6 @@
+[
+  "test_employee.py::test_give_custom_raise",
+  "test_employee.py::test_give_custom_raise_fixture",
+  "test_employee.py::test_give_default_raise",
+  "test_employee.py::test_give_default_raise_fixture"
+]

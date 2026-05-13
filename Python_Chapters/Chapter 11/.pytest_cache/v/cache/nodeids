@@ -1,0 +1,5 @@
+[
+  "test_name_function.py::test_first_last_middle_name",
+  "test_survey.py::test_store_single_response",
+  "test_survey.py::test_store_three_responses"
+]

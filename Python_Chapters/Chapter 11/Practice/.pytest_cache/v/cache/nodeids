@@ -1,0 +1,11 @@
+[
+  "practice_pytest.py::test_add_numbers_basic",
+  "practice_pytest.py::test_add_numbers_negative",
+  "practice_pytest.py::test_add_numbers_zero",
+  "practice_pytest.py::test_get_greeting",
+  "practice_pytest.py::test_get_greeting_empty",
+  "practice_pytest.py::test_get_greeting_mixed_case",
+  "practice_pytest.py::test_multiply[-2-4--8]",
+  "practice_pytest.py::test_multiply[0-7-0]",
+  "practice_pytest.py::test_multiply[2-3-6]"
+]

@@ -1,0 +1,4 @@
+[
+  "test_cities.py::test_city_country",
+  "test_cities.py::test_city_country_population"
+]
