@@ -1,0 +1,21 @@
+[
+  "Python_Chapters/Chapter 11/Practice/practice_pytest.py::test_add_numbers_basic",
+  "Python_Chapters/Chapter 11/Practice/practice_pytest.py::test_add_numbers_negative",
+  "Python_Chapters/Chapter 11/Practice/practice_pytest.py::test_add_numbers_zero",
+  "Python_Chapters/Chapter 11/Practice/practice_pytest.py::test_get_greeting",
+  "Python_Chapters/Chapter 11/Practice/practice_pytest.py::test_get_greeting_empty",
+  "Python_Chapters/Chapter 11/Practice/practice_pytest.py::test_get_greeting_mixed_case",
+  "Python_Chapters/Chapter 11/Practice/practice_pytest.py::test_multiply[-2-4--8]",
+  "Python_Chapters/Chapter 11/Practice/practice_pytest.py::test_multiply[0-7--2]",
+  "Python_Chapters/Chapter 11/Practice/practice_pytest.py::test_multiply[0-7-0]",
+  "Python_Chapters/Chapter 11/Practice/practice_pytest.py::test_multiply[2-3-6]",
+  "Python_Chapters/Chapter 11/TRY_OUT/P217/test_cities.py::test_city_country",
+  "Python_Chapters/Chapter 11/TRY_OUT/P217/test_cities.py::test_city_country_population",
+  "Python_Chapters/Chapter 11/TRY_OUT/P223/test_employee.py::test_give_custom_raise",
+  "Python_Chapters/Chapter 11/TRY_OUT/P223/test_employee.py::test_give_custom_raise_fixture",
+  "Python_Chapters/Chapter 11/TRY_OUT/P223/test_employee.py::test_give_default_raise",
+  "Python_Chapters/Chapter 11/TRY_OUT/P223/test_employee.py::test_give_default_raise_fixture",
+  "Python_Chapters/Chapter 11/test_name_function.py::test_first_last_middle_name",
+  "Python_Chapters/Chapter 11/test_survey.py::test_store_single_response",
+  "Python_Chapters/Chapter 11/test_survey.py::test_store_three_responses"
+]
