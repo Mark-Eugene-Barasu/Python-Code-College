@@ -8,5 +8,6 @@ print(f"Status code: {r.status_code}")
 
 # Explore the structure of the data.
 response_dict = r.json()
+# print(f"Keys: {response_dict.keys()}")
 response_string = json.dumps(response_dict, indent=4)
 print(response_string)
