@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tasks</title>
+    <style>
+      body { font-family: sans-serif; margin: 2rem; }
+      a { text-decoration: none; }
+      .card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; }
+      .row { display: flex; gap: 1rem; align-items: center; }
+      .muted { color: #666; }
+      .btn { padding: 0.4rem 0.8rem; border: 1px solid #333; border-radius: 6px; background: #fff; }
+      .btn-danger { border-color: #b00; color: #b00; }
+      .btn-primary { border-color: #0066cc; color: #0066cc; }
+    </style>
+  </head>
+  <body>
+    <h1>To-Do Tasks</h1>
+    <p><a class="btn btn-primary" href="{% url 'tasks:task_create' %}">+ New task</a></p>
+
+    {% for task in tasks %}
+      <div class="card">
+        <div class="row">
+          <div>
+            <strong>{{ task.title }}</strong>
+            <div class="muted">Created: {{ task.created_at|date:"Y-m-d H:i" }}</div>
+          </div>
+          <div style="margin-left:auto;">
+            {% if task.completed %}
+              <span style="color: #0a7a0a; font-weight: 600;">Completed</span>
+            {% else %}
+              <span style="color: #a06a00; font-weight: 600;">Open</span>
+            {% endif %}
+          </div>
+        </div>
+
+        <div style="margin-top: 0.75rem; display:flex; gap:0.5rem;">
+          <a class="btn" href="{% url 'tasks:task_detail' task.pk %}">View</a>
+          <a class="btn" href="{% url 'tasks:task_update' task.pk %}">Edit</a>
+          <a class="btn btn-danger" href="{% url 'tasks:task_delete' task.pk %}">Delete</a>
+        </div>
+      </div>
+    {% empty %}
+      <p>No tasks yet.</p>
+    {% endfor %}
+  </body>
+</html>
+
