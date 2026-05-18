@@ -1,33 +1,31 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>{{ task.title }}</title>
-    <style>
-      body { font-family: sans-serif; margin: 2rem; }
-      .btn { padding: 0.4rem 0.8rem; border: 1px solid #333; border-radius: 6px; background: #fff; text-decoration:none; display:inline-block; margin-right:0.5rem; }
-    </style>
-  </head>
-  <body>
-    <h1>{{ task.title }}</h1>
+{% extends 'tasks/base.html' %}
 
-    <p>
-      Status:
+{% block title %}{{ task.title }}{% endblock %}
+
+{% block content %}
+  <div class="card">
+    <h2 style="margin:0 0 0.5rem 0;">{{ task.title }}</h2>
+
+    <div style="margin: 0.5rem 0;">
       {% if task.completed %}
-        <strong style="color:#0a7a0a;">Completed</strong>
+        <span class="badge badge-success">✅ Completed</span>
       {% else %}
-        <strong style="color:#a06a00;">Open</strong>
+        <span class="badge badge-warning">🟠 Open</span>
       {% endif %}
-    </p>
+    </div>
 
-    <p>Created: {{ task.created_at|date:"Y-m-d H:i" }}</p>
-    <p>Updated: {{ task.updated_at|date:"Y-m-d H:i" }}</p>
+    <div style="margin-top: 0.75rem;">
+      <div class="tiny">Created: {{ task.created_at|date:"Y-m-d H:i" }}</div>
+      <div class="tiny">Updated: {{ task.updated_at|date:"Y-m-d H:i" }}</div>
+    </div>
 
-    <p>
-      <a class="btn" href="{% url 'tasks:task_update' task.pk %}">Edit</a>
-      <a class="btn" href="{% url 'tasks:task_delete' task.pk %}">Delete</a>
-      <a class="btn" href="{% url 'tasks:task_list' %}">Back to list</a>
-    </p>
-  </body>
-</html>
+    <div style="height: 1rem;"></div>
+
+    <div class="actions">
+      <a class="btn" href="{% url 'tasks:task_update' task.pk %}">✏️ Edit</a>
+      <a class="btn btn-danger" href="{% url 'tasks:task_delete' task.pk %}">🗑️ Delete</a>
+      <a class="btn" href="{% url 'tasks:task_list' %}">↩️ Back</a>
+    </div>
+  </div>
+{% endblock %}
 

@@ -1,48 +1,55 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Tasks</title>
-    <style>
-      body { font-family: sans-serif; margin: 2rem; }
-      a { text-decoration: none; }
-      .card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; }
-      .row { display: flex; gap: 1rem; align-items: center; }
-      .muted { color: #666; }
-      .btn { padding: 0.4rem 0.8rem; border: 1px solid #333; border-radius: 6px; background: #fff; }
-      .btn-danger { border-color: #b00; color: #b00; }
-      .btn-primary { border-color: #0066cc; color: #0066cc; }
-    </style>
-  </head>
-  <body>
-    <h1>To-Do Tasks</h1>
-    <p><a class="btn btn-primary" href="{% url 'tasks:task_create' %}">+ New task</a></p>
+{% extends 'tasks/base.html' %}
 
-    {% for task in tasks %}
-      <div class="card">
-        <div class="row">
-          <div>
-            <strong>{{ task.title }}</strong>
-            <div class="muted">Created: {{ task.created_at|date:"Y-m-d H:i" }}</div>
-          </div>
-          <div style="margin-left:auto;">
-            {% if task.completed %}
-              <span style="color: #0a7a0a; font-weight: 600;">Completed</span>
-            {% else %}
-              <span style="color: #a06a00; font-weight: 600;">Open</span>
-            {% endif %}
-          </div>
+{% block title %}To-Do Tasks{% endblock %}
+
+{% block content %}
+  <div class="card">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; flex-wrap:wrap;">
+      <div>
+        <h2 style="margin:0 0 0.35rem 0;">Your tasks</h2>
+        <div class="tiny">Click buttons to view, edit, or delete.</div>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="{% url 'tasks:task_create' %}">✨ New task</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 1rem;"></div>
+
+  {% for task in tasks %}
+    <div class="card" style="margin-bottom: 1rem;">
+      <div style="display:flex; gap:1rem; align-items:flex-start; justify-content:space-between; flex-wrap:wrap;">
+        <div>
+          <div style="font-size:1.1rem; font-weight:800;">{{ task.title }}</div>
+          <div class="tiny">Created: {{ task.created_at|date:"Y-m-d H:i" }}</div>
         </div>
 
-        <div style="margin-top: 0.75rem; display:flex; gap:0.5rem;">
-          <a class="btn" href="{% url 'tasks:task_detail' task.pk %}">View</a>
-          <a class="btn" href="{% url 'tasks:task_update' task.pk %}">Edit</a>
-          <a class="btn btn-danger" href="{% url 'tasks:task_delete' task.pk %}">Delete</a>
+        <div>
+          {% if task.completed %}
+            <span class="badge badge-success">✅ Completed</span>
+          {% else %}
+            <span class="badge badge-warning">🟠 Open</span>
+          {% endif %}
         </div>
       </div>
-    {% empty %}
-      <p>No tasks yet.</p>
-    {% endfor %}
-  </body>
-</html>
+
+      <div style="height: 0.75rem;"></div>
+
+      <div class="actions">
+        <a class="btn" href="{% url 'tasks:task_detail' task.pk %}">👀 View</a>
+        <a class="btn" href="{% url 'tasks:task_update' task.pk %}">✏️ Edit</a>
+        <a class="btn btn-danger" href="{% url 'tasks:task_delete' task.pk %}">🗑️ Delete</a>
+      </div>
+    </div>
+  {% empty %}
+    <div class="card">
+      <h2 style="margin:0 0 0.5rem 0;">No tasks yet 🎉</h2>
+      <div class="tiny">Create your first task to get started.</div>
+      <div style="height:0.75rem"></div>
+      <a class="btn btn-primary" href="{% url 'tasks:task_create' %}">✨ New task</a>
+    </div>
+  {% endfor %}
+{% endblock %}
+
 

@@ -1,23 +1,25 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Delete {{ task.title }}</title>
-    <style>
-      body { font-family: sans-serif; margin: 2rem; }
-      .btn { padding: 0.4rem 0.8rem; border: 1px solid #333; border-radius: 6px; background: #fff; text-decoration:none; display:inline-block; }
-      .danger { border-color:#b00; color:#b00; }
-    </style>
-  </head>
-  <body>
-    <h1>Delete task</h1>
-    <p>Are you sure you want to delete <strong>{{ task.title }}</strong>?</p>
+{% extends 'tasks/base.html' %}
+
+{% block title %}Delete {{ task.title }}{% endblock %}
+
+{% block content %}
+  <div class="card" style="border-color: #f7c6c6;">
+    <h2 style="margin:0 0 0.5rem 0; color: var(--danger);">🗑️ Delete task?</h2>
+    <div class="tiny">This action cannot be undone.</div>
+
+    <div style="height: 0.75rem;"></div>
+
+    <p style="font-size: 1.05rem; margin: 0 0 1rem 0;">
+      Are you sure you want to delete <strong>{{ task.title }}</strong>?
+    </p>
 
     <form method="post">
       {% csrf_token %}
-      <button class="btn danger" type="submit">Yes, delete</button>
-      <a class="btn" href="{% url 'tasks:task_detail' task.pk %}">Cancel</a>
+      <div class="actions">
+        <button class="btn btn-danger" type="submit">✅ Yes, delete</button>
+        <a class="btn" href="{% url 'tasks:task_detail' task.pk %}">↩️ Cancel</a>
+      </div>
     </form>
-  </body>
-</html>
+  </div>
+{% endblock %}
 
