@@ -65,6 +65,7 @@ Relative URLs:
 
 ## 3) File-by-file: what each element does
 
+
 ### A) Top-level project folder: `todoproject/`
 
 #### `todoproject/settings.py`

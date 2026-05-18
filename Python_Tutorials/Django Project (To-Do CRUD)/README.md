@@ -7,7 +7,7 @@ This project implements a simple CRUD To-Do application in Django.
 ```bat
 cd "Python_Tutorials/Django Project"
 python -m venv ll_env
-ll_env\Scripts\activate
+.\ll_env\Scripts\activate.ps1
 pip install Django
 python manage.py migrate
 python manage.py runserver
